@@ -68,7 +68,7 @@ func NewBlock(parent common.Hash, number uint64) *types.Block {
 		Time:        big.NewInt(time.Now().UnixNano() / 1e6),
 		Extra:       make([]byte, 97),
 		ReceiptHash: common.BytesToHash(hexutil.MustDecode("0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421")),
-		Root:        common.BytesToHash(hexutil.MustDecode("0xf920ee8544ecd4e091d11ff0c279cc82a0d30091a646bbe8cd6b45b30e39cf80")),
+		Root:        common.BytesToHash(hexutil.MustDecode("0xcee756a95465ba7bcb5483e4e1c2057c4ecd3265cd2a42b0bb6aecb4ffb7ee65")),
 		Coinbase:    common.Address{},
 		GasLimit:    10000000000,
 	}
@@ -85,7 +85,7 @@ func NewBlockWithSign(parent common.Hash, number uint64, node *TestCBFT) *types.
 		Time:        big.NewInt(time.Now().UnixNano() / 1e6),
 		Extra:       make([]byte, 97),
 		ReceiptHash: common.BytesToHash(hexutil.MustDecode("0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421")),
-		Root:        common.BytesToHash(hexutil.MustDecode("0xf920ee8544ecd4e091d11ff0c279cc82a0d30091a646bbe8cd6b45b30e39cf80")),
+		Root:        common.BytesToHash(hexutil.MustDecode("0xcee756a95465ba7bcb5483e4e1c2057c4ecd3265cd2a42b0bb6aecb4ffb7ee65")),
 		Coinbase:    common.Address{},
 		GasLimit:    10000000000,
 	}
